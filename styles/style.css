@@ -103,8 +103,6 @@ ol {
   font-weight: 400;
   line-height: normal;
 }
-.search-form__label-text {
-}
 .visually-hidden {
   clip-path: inset(50%);
   width: 1px;
