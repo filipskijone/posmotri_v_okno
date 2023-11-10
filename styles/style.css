@@ -49,17 +49,23 @@ ol {
   display: flex;
   flex-wrap: wrap;
   align-items: end;
-}
-.result__video {
-  max-width: 711px;
-  max-height: 400px;
+  min-height: 535px;
 }
 .result__video-container {
+  position: absolute;
+  bottom: 350px;
+  z-index: 0;
   width: 711px;
   height: 400px;
-  padding-top: 35px;
+  top: 210px;
 }
-.search-form {
+.result__video {
+  position: inherit;
+  z-index: -1;
+  max-width: 711px;
+  height: 400px;
+}
+.search-form { 
   width: 711px;
   height: 54px;
   display: inline-flex;
@@ -78,6 +84,7 @@ ol {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
+  color: #fff;
   text-align: start;
 }
 .search-form__checkbox-list{
@@ -158,6 +165,8 @@ ol {
   text-decoration: none;
   color: #fff;
   font-family: 'Oswald';
+  position: inherit;
+  z-index: 0;
 }
 .content__list {
   height: 298px;
