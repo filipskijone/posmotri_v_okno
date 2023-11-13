@@ -43,6 +43,7 @@ ol {
 .content {
   display: flex;
   margin: auto;
+  padding: 0 30px;
   gap: 30px;
 }
 .result {
@@ -153,6 +154,7 @@ ol {
   gap: 30px;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: auto;
 }
 .content__card-link {
   text-decoration: none;
