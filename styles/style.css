@@ -10,7 +10,7 @@ html {
 
 .page {
   display: flex;
-  justify-content: space-between;
+  place-items: center center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -41,6 +41,8 @@ ol {
   list-style: none;
 }
 .content {
+  align-items: end;
+  width: 1140px;
   display: flex;
   margin: auto;
   padding: 0 30px;
@@ -49,8 +51,6 @@ ol {
 .result {
   width: auto;
   height: auto;
-  display: flex;
-  flex-wrap: wrap;
 }
 .result__video-container {
   align-self: center;
@@ -58,18 +58,18 @@ ol {
   z-index: 0;
   width: 711px;
   height: 386px;
-  margin-top: 70px;
+  margin-bottom: 16px;
 }
 .result__video {
   z-index: 0;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
 }
 .search-form {
   position: relative;
   display: flex;
   align-self: flex-end;
-  gap: 47px;
+  gap: 40px;
   justify-content: space-between;
 }
 .search-form__label {
@@ -94,12 +94,6 @@ ol {
   gap: 13px;
 }
 .search-form__fieldset {
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
   border: none;
 }
 .search-form__fieldset-title {
@@ -108,6 +102,7 @@ ol {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 5px;
 }
 .visually-hidden {
   clip-path: inset(50%);
@@ -151,17 +146,21 @@ ol {
 }
 .content__details {
   display: flex;
-  gap: 30px;
+  gap: 22px;
   justify-content: space-between;
   flex-wrap: wrap;
   width: auto;
 }
 .content__card-link {
+  display: block;
   text-decoration: none;
   color: #fff;
   font-family: "Oswald", sans-serif;
   position: inherit;
   z-index: 0;
+}
+.content__card-link_current {
+  background-color: #545050;
 }
 .content__list {
   position: relative;
@@ -203,7 +202,7 @@ ol {
 }
 .title {
   color: #fff;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 94%;
@@ -212,7 +211,7 @@ ol {
 .content__accent {
   color: #545050;
 }
-input[name="time"]:checked + span {
+.search-form__checkbox:checked + span {
   width: 17px;
   height: 17px;
   margin-right: 2px;
@@ -220,20 +219,23 @@ input[name="time"]:checked + span {
   outline: 1px solid #fff;
   background-color: #fff;
 }
-input[name="time"]:active + span {
+.search-form__checkbox:active + span {
   width: 19px;
   height: 19px;
   margin-right: 0px;
   background-color: inherit;
 }
-label:focus-visible {
+.search-form__label:focus-visible {
   padding: 1px;
   outline: 1px solid #fff;
   margin: 0 1px;
 }
-label:hover {
+.search-form__label:hover {
   text-decoration-line: underline;
   cursor: pointer;
+}
+button:focus {
+  display: none;
 }
 button:active {
   background-color: #545050;
