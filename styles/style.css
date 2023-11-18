@@ -45,7 +45,6 @@ ol {
   width: 1140px;
   display: flex;
   margin: auto;
-  padding: 0 30px;
   gap: 30px;
 }
 .result {
