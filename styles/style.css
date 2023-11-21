@@ -234,7 +234,7 @@ ol {
   cursor: pointer;
 }
 button:focus {
-  display: none;
+  outline: none;
 }
 button:active {
   background-color: #545050;
